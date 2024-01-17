@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The page displays all my projects, coursework, and skills as a computer science major.">
+    <title>Hannah Nguyen - Portfolio</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shared.css">
+   
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand lead" href="#">Hannah Nguyen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="contact.php">Contact</a> -->
+                    <a class="nav-link" href="mailto:nnguyen3@usc.edu">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="files/Resume-HN.pdf" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/hannahnguynn?tab=repositories" target="_blank">Github</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="login.php">Admin Login</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/me.jpeg" alt="Hannah Nguyen" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4">Hello!</h1>
+                    <p class="lead">Welcome to my portfolio :)</p>
+                    <p class="lead">My name is Hannah Nguyen, and I am an aspiring software engineer studying toward my Bachelor's in Computer Science at the University of Southern California. I am passionate about software design, embedded systems, web development, and eager to learn about so much more! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="lead" id="projects">Projects</h2>
+            <p>     </p>
+            <div class="row">
+                <!-- Add your portfolio items here -->
+   
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="img/park.jpg" class="card-img-top" alt="National Park">
+                        <div class="card-body">
+                            <h5 class="card-title">Hike Reservation</h5>
+                            <p class="card-text">During quarantine, my fellow peers and I developed a program that replicated Disney's park reservation system. Instead, we applied
+                                 it to National Parks in hopes of reducing days of overconcentration and stopping the spread. 
+                                 Users are able to choose make, view, and cancel their reservations, containing information 
+                                 regarding the date and time of their visit, their desired park, the size of their party.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="img/encryption.jpg" class="card-img-top" alt="Encryption">
+                        <div class="card-body">
+                            <h5 class="card-title">RSA Decryption and Encryption</h5>
+                            <p class="card-text">When users input their encryption key, a product of two prime numbers, and a message, the program implements Modular Expontiation to encrypt the given message. Inversely, when the user inputs an encrypted text file, the program implements both the basic and extended Euclidean Algorithm to decrypt the message into a separate text file, using the two prime command inputs, p and q.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="img/thermostat.png" class="card-img-top" alt="Thermostat">
+                        <div class="card-body">
+                            <h5 class="card-title">Thermostat</h5>
+                            <p class="card-text">Using a temperature sensor, Arduino microcontroller, LCD shield, buzzer, rotary encoder, buttons, and a servo motor, 
+                                I created a thermostat to read and regulate the temperature of the room. The user is able to set tempurature bounds, and once the temperature goes above of below 
+                            said bounds, the program will activate the air conditioning or heater accordingly. Additionally, the servo motor will display the current temperature; however, when the 
+                        user is setting the bounds, the motor will display the current settings in sync with the rotary encoder input for 4 seconds and return to its inital setting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="img/camera.jpg" class="card-img-top" alt="Image Editor">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Editor</h5>
+                            <p class="card-text">The user is able to select, delete, and manipulate objects within the image processor through command inputs. Using
+                                breadth-first search (BFS), the program identifies and groups all objects in order to allow the user to move, cast, and edit their photos like the magic wand tool on Photoshop. </p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img src="img/movie.png" class="card-img-top" alt="Movie Site">
+                        <div class="card-body">
+                            <h5 class="card-title link"><a href="http://303.itpwebdev.com/~nnguyen3/assignment_07/assignment_07.html">Movie Search</a></h5>
+                            <p class="card-text">The Movie Search website imports and Apple API of movies to allow users to search up and discover the ratings, release dates, and more about their desired movie, in an aesthetic and simple-designed interface. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="lead" id="courses">Course Work</h2>
+                    <ul>
+                        <li>Data Structures and Object Oriented Design</li>
+                        <li>Discrete Methods in Computer Science</li>
+                        <li>Intro to Embedded Systems</li>
+                        <li>Full-Stack Web Development</li>
+                        <li>Probability Theory</li>
+                        <li>C++ Programming 1</li>
+                        <li>C++ Programming 2</li>
+                        <li>Java Programming 1</li>
+                        <li>Java Programming 2</li>
+                    </ul>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="lead" id="misc">Skills & Miscellaneous</h2>
+            <p><strong>Technical:</strong> C/C++, Java, Python, Racket, HTML, CSS, Beginner Level Javascript</p>
+            <p><strong>Tools:</strong> Git, Docker, Django, Figma, Bootstrap, Arduino, LCD Display</p>
+            <p><strong>Languages:</strong> Native English speaker, Proficient Vietnamese, Elementary Spanish</p>
+            <p><strong>Clubs:</strong> <a class="link" href="https://www.scopeusc.com/" target="_blank">Scope</a>,
+                 <a class="link" href="https://www.uscacm.org/" target="_blank">Association for Computing Machinery</a>,
+                 <a class="link" href="https://www.usccasa.org/" target="_blank">Chinese American Student Association</a> 
+            <p><strong>Interests:</strong> Tennis, Travel, Film Photography, Fitness, Music Festivals, Notion, Golf</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p class="footer">&copy; 2023 Hannah Nguyen.</p>
+    </footer>
+
+    <!-- Include Bootstrap and jQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
